@@ -84,17 +84,17 @@
     async function clickForward() {
         var buttonStep1 = document.getElementById("btnAceptar");
         if (buttonStep1) {
-            await sleep(getRandomNumber(1000, 2000));
+            await sleep(getRandomNumber(500, 1500));
             buttonStep1.click();
         }
         var buttonStep2 = document.getElementById("btnEntrar");
         if (buttonStep2) {
-            await sleep(getRandomNumber(1000, 2000));
+            await sleep(getRandomNumber(500, 1500));
             buttonStep2.click();
         }
         var buttonStep3 = document.getElementById("btnEnviar");
         if (buttonStep3) {
-            await sleep(getRandomNumber(1000, 2000));
+            await sleep(getRandomNumber(500, 1500));
             buttonStep3.click();
         }
     }
