@@ -35,14 +35,6 @@
         return Math.floor(Math.random() * (max-min + 1)) + max;
     }
 
-    function selectOficina() {
-        var selectElement = document.getElementById("sede");;
-        if (selectElement && selectElement.value != "36") {
-            selectElement.value = "36";
-            selectElement.dispatchEvent(new Event('change'));
-        }
-    };
-
     function selectTramite() {
         var tramiteElement = document.getElementById("tramiteGrupo[0]");
         if (tramiteElement) {
@@ -113,7 +105,6 @@
 
     async function initialize() {
         selectProvincia();
-        selectOficina();
         selectTramite();
         inputNIE();
         inputName();
